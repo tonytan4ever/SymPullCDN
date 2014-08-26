@@ -142,6 +142,6 @@ class MainHandler(webapp2.RequestHandler):
         self.response.out.write(request_entity.content)
 
 
-if __name__ == "__main__":
-    app = webapp2.WSGIApplication([('/.*', MainHandler)],
+
+app = webapp2.WSGIApplication([('/.*', MainHandler)],
                               debug=True)
